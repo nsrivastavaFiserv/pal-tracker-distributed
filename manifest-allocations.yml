@@ -2,7 +2,7 @@ applications:
 - name: tracker-allocations
   path: ./applications/allocations-server/build/libs/allocations-server.jar
   routes:
-  - route: pal-allo-tracker-nishant.cfapps.io
+  - route: allocations-paldis.cfapps.io
   memory: 1G
   instances: 1
   env:

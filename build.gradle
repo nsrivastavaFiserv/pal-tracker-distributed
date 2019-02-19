@@ -1,7 +1,5 @@
 import io.pivotal.pal.tracker.gradlebuild.DependenciesGraphPlugin
 
-
-
 buildscript {
     ext {
         springBootVersion = "2.0.6.RELEASE"
@@ -16,7 +14,7 @@ buildscript {
         junitVersion = "4.12"
         okhttpVersion = "3.12.0"
         jsonPathVersion = "2.4.0"
-        springCloudVersion = "Finchley.SR1"
+        springCloudVersion = "Finchley.SR2"
         springCloudServicesClientLibrariesVersion = "2.0.2.RELEASE"
     }
 
@@ -49,11 +47,12 @@ subprojects {
         compile "com.fasterxml.jackson.core:jackson-databind:$jacksonVersion"
         compile "com.fasterxml.jackson.core:jackson-annotations:$jacksonVersion"
         compile "org.slf4j:slf4j-api:$slf4jVersion"
-
+        compile "org.springframework.cloud:spring-cloud-commons:$springCloudServicesClientLibrariesVersion"
 
         testCompile "junit:junit:$junitVersion"
         testCompile "org.mockito:mockito-core:$mockitoVersion"
         testCompile "org.assertj:assertj-core:$assertJVersion"
+        testCompile "org.springframework.cloud:spring-cloud-commons:$springCloudServicesClientLibrariesVersion"
     }
 
     test {

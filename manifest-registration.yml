@@ -2,7 +2,7 @@ applications:
 - name: tracker-registration
   path: ./applications/registration-server/build/libs/registration-server.jar
   routes:
-  - route: pal-reg-tracker-nishant.cfapps.io
+  - route: registeration-paldis.cfapps.io
   memory: 1G
   instances: 1
   env:
