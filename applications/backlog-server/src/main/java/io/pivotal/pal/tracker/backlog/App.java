@@ -10,6 +10,7 @@ import org.springframework.web.client.RestOperations;
 
 import java.util.TimeZone;
 
+
 @EnableEurekaClient
 @SpringBootApplication
 @ComponentScan({"io.pivotal.pal.tracker.backlog", "io.pivotal.pal.tracker.restsupport"})

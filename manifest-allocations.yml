@@ -2,7 +2,7 @@ applications:
 - name: tracker-allocations
   path: ./applications/allocations-server/build/libs/allocations-server.jar
   routes:
-  - route: allocations-palnishant.cfapps.io
+  - route: allocations-pal-nishant.apps.chicken.pal.pivotal.io
   memory: 1G
   instances: 1
   env:
